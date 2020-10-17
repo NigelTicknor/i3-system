@@ -31,3 +31,9 @@ Do the "bank setup" aka configure all of the banks you want
 Do the "template configuration" so that workspaces are assigned to monitors, etc
 Run ./build.sh
 Every time you switch your monitor configuraiton, run ./build.sh
+
+
+Other
+-----------------
+The scripts directory should be in your PATH
+The blocks directory is for i3blocks which you should also install
