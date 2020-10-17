@@ -1,0 +1,30 @@
+#! /bin/sh
+
+WIDTH=200
+HEIGHT=200
+DATEFMT="+%m/%d %a %I:%M:%S%p"
+SHORTFMT="+%H:%M:%S"
+
+day=$(date +%A)
+time=$(date +%H)
+
+if [ "$day" = "Thursday" ] && [ "$time" -lt 12 ]  ; then
+
+case "$BLOCK_BUTTON" in
+  1|2|3) 
+
+	# the position of the upper left corner of the popup
+	#posX=$(($BLOCK_X - $WIDTH / 2))
+	#posY=$(($BLOCK_Y - $HEIGHT))
+
+	$(pizza.sh)
+
+esac
+echo "🍕"
+echo "🍕"
+
+else
+	echo ""
+	echo ""
+fi
+
