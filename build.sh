@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Usage:
+# ./build.sh
+# ./build.sh -m 3
+
 mkdir -p "bin"
 
 build_config()
@@ -100,3 +104,4 @@ eval "$(get_monitors)"
 build_config
 i3 reload
 i3 restart
+./fix_workspaces.sh
